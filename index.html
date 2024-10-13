@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animated Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    /* Custom CSS for animations */
+    .animate-bounce { animation: bounce 2s infinite; }
+    .animate-spin { animation: spin 4s linear infinite; }
+    .animate-pulse { animation: pulse 2s infinite; }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar Section -->
+  <header>
+    <nav class="flex justify-between items-center py-4 px-8 bg-gray-800 text-white">
+      <div class="text-2xl font-bold">Portfolio</div>
+      <ul class="flex space-x-8">
+        <li><a href="#home" class="hover:text-gray-400">Home</a></li>
+        <li><a href="#about" class="hover:text-gray-400">About</a></li>
+        <li><a href="#skills" class="hover:text-gray-400">Skills</a></li>
+        <li><a href="#projects" class="hover:text-gray-400">Projects</a></li>
+        <li><a href="#contact" class="hover:text-gray-400">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home" class="flex items-center justify-between py-16 px-8 bg-gray-900 text-white">
+    <div>
+      <h1 class="text-5xl font-bold animate-bounce">MD.PARIJUL ISLAM</h1>
+      <p class="text-2xl mt-2 animate-pulse">Junior Front-End Developer</p>
+      <div class="mt-4">
+        <a href="/cv/Resume.pdf" download class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Download CV</a>
+        <button class="bg-green-500 px-6 py-2 rounded hover:bg-green-700 ml-4">Hire Me</button>
+      </div>
+    </div>
+    <div class="rounded-full overflow-hidden w-40 h-40 ">
+      <img src="img/pappu.jpg" alt="Your Photo">
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="flex items-center justify-between py-16 px-8 bg-white text-black">
+    <div class="rounded-full overflow-hidden w-40 h-40 ">
+      <img src="img/pappu.jpg" alt="Your Photo">
+    </div>
+    <div>
+      <h2 class="text-3xl font-bold">About Me</h2>
+      <p class="mt-2">I am a passionate front-end developer with experience in creating responsive websites.</p>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="py-16 px-8 bg-gray-100 text-black">
+    <h2 class="text-3xl font-bold text-center">My Skills</h2>
+    <p class="text-center mt-4">As a front-end developer, I have a wide range of skills that help me create beautiful and functional websites. Below are some of the technologies I specialize in:</p>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mt-8">
+      <div class="bg-white p-4 rounded shadow-lg">
+        <h3 class="text-xl font-bold">HTML</h3>
+        <p class="mt-2">Expert in crafting semantic and accessible HTML structures.</p>
+      </div>
+      <div class="bg-white p-4 rounded shadow-lg">
+        <h3 class="text-xl font-bold">CSS</h3>
+        <p class="mt-2">Skilled in designing responsive and visually appealing layouts using CSS and frameworks like Tailwind and Bootstrap.</p>
+      </div>
+      <div class="bg-white p-4 rounded shadow-lg">
+        <h3 class="text-xl font-bold">JavaScript</h3>
+        <p class="mt-2">Proficient in making websites interactive with modern JavaScript features.</p>
+      </div>
+      <div class="bg-white p-4 rounded shadow-lg">
+        <h3 class="text-xl font-bold">Bootstrap</h3>
+        <p class="mt-2">Experience with Bootstrap to quickly build responsive and mobile-first websites.</p>
+      </div>
+      <div class="bg-white p-4 rounded shadow-lg">
+        <h3 class="text-xl font-bold">Tailwind CSS</h3>
+        <p class="mt-2">Efficient in using Tailwind for utility-first responsive designs with minimal code.</p>
+      </div>
+      <div class="bg-white p-4 rounded shadow-lg">
+        <h3 class="text-xl font-bold">GitHub</h3>
+        <p class="mt-2">Proficient in version control and collaborating with others using Git and GitHub.</p>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-16 px-8 bg-white text-black">
+  <h2 class="text-3xl font-bold text-center">Projects</h2>
+  <p class="text-center mt-4">Here are some of the projects I have worked on, showcasing my skills in front-end development and user interface design.</p>
+  
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+    <!-- Project 1 -->
+    <div class="bg-gray-100 p-4 rounded shadow-lg">
+      <h3 class="text-xl font-bold mt-4">E-commerce Website</h3>
+      <p class="mt-2">Experience in building responsive e-commerce websites using Bootstrap ensuring
+        optimal performance across devices."
+        "Skilled in designing user-friendly interfaces and layouts for e-commerce platforms,
+        focusing on responsiveness and user experience.""
+        </p>
+      <a href="https://mdparijul.github.io/E-COMMERCE-MAIN/" class="text-blue-500 hover:underline mt-4 block">View Project</a>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="bg-gray-100 p-4 rounded shadow-lg">
+      <h3 class="text-xl font-bold mt-4">Biker Zone Showcase Website</h3>
+      <p class="mt-2">Designed and developed a responsive showcase website for a motorcycle business,
+        focusing on product promotion and user engagement. Implemented a modern, clean UI
+        using Daisy UI with Tailwind CSS, featuring sections like latest news, client testimonials,
+        and a FAQ section. This project highlights my ability to build visually appealing and
+        functional websites that enhance brand credibility and user trust. The site is optimized for
+        all devices and ensures a smooth browsing experience.</p>
+      <a href="https://mdparijul.github.io/BIKIER-ZONE-WITH-DAISIUI/" class="text-blue-500 hover:underline mt-4 block">View Project</a>
+    </div>
+  </div>
+</section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-16 px-8 bg-gray-200 text-black">
+    <div>
+      <h2 class="text-3xl font-bold text-center">Contact Me</h2>
+      <p class="text-center mt-4">Phone: +8801740103899 | Email: pappubokshi238@gmail.com</p>
+    </div>
+  </section>
+
+</body>
+</html>
